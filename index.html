@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noindex, nofollow">
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+<style type="text/css">
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+</style>
+<script type="text/javascript">
+function getUrlVars () {
+  var vars = {}
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    vars[key] = value
+  })
+  return vars
+}
+var id = getUrlVars().id
+if(id) {
+$(document).ready(function () {
+  $('#dl').html(`<iframe src="//y-api.org/button/?v=${id}&f=mp3&fc=#ffffff" scrolling="no" style="width:320px;height:38px;border:none;"></iframe>`)
+})
+} else {
+    window.location.href = "https://www.lagump3.my.id"
+}
+      </script>
+</head>
+<body>
+<div id="dl" align="center"></div>
+<script src="//cdn.jsdelivr.net/gh/landroidorg/js@master/simple.js?v=1.0" type="6220850ce498f65d4dae8674-text/javascript"></script>
+<script type="6220850ce498f65d4dae8674-text/javascript" src="//cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+
+</body>
+</html>
